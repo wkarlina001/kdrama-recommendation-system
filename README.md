@@ -1,4 +1,4 @@
-# *Movie Recommendation Systems*
+# *Korean Drama Recommendation Systems*
 
 Two types of Recommendation Systems : Content based & Collaborative filtering
 

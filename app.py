@@ -3,8 +3,6 @@ import requests
 import pickle
 import pandas as pd
 import numpy as np
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
 from bing_image_downloader import downloader
 import os
 

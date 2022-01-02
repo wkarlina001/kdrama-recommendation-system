@@ -7,4 +7,4 @@ Content-based Recommendation System is showcased using Streamlit - an open-sourc
 ## How to launch streamlit app :
 ` streamlit run app.py `
 
-![Screenshot 2022-01-02 at 6 20 53 PM](https://user-images.githubusercontent.com/45416893/147872844-bc00dbf1-b525-4e90-95fd-5faf0b06704c.png)
+![Screenshot 2022-01-02 at 8 43 14 PM](https://user-images.githubusercontent.com/45416893/147876073-2a86cf86-c408-49b2-8869-c7ee549e580a.png)

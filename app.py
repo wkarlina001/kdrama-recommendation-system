@@ -39,7 +39,7 @@ similarity = pickle.load(open('similarity.pkl','rb'))
 st.markdown("<h1 style='text-align: center; color: black;'>K-Drama Recommender System</h1>", unsafe_allow_html=True)
 movie_list = sorted(movies['Drama_Name'].values)
 selected_movie = st.selectbox(
-    "Type or select a movie from the dropdown",
+    "Type or select your favorite movie from the dropdown",
     movie_list
 )
 

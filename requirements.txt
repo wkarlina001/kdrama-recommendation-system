@@ -1,2 +1,6 @@
 streamlit
 requests
+bing-image-downloader
+numpy
+pandas
+pickle

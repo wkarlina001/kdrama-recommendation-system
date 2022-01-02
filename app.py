@@ -7,7 +7,7 @@ from bing_image_downloader import downloader
 import os
 
 def fetch_poster(title):
-    downloader.download("korean-"+title, limit=1, output_dir='image', \
+    downloader.download("korean-drama-"+title, limit=1, output_dir='image', \
         adult_filter_off=True, force_replace=False, timeout=60, verbose=True)
     return 'image/korean-'+title
 
@@ -24,12 +24,12 @@ def make_recommendation(title):
         similar_movies.append(title)
         
         try:
-            os.listdir('image/korean-'+title)
+            os.listdir('image/korean-drama-'+title)
         except:
             fetch_poster(title)
         
-        image = os.listdir('image/korean-'+title)[0]
-        movies_poster.append('image/korean-'+title+'/'+image)
+        image = os.listdir('image/korean-drama-'+title)[0]
+        movies_poster.append('image/korean-drama-'+title+'/'+image)
 
     return similar_movies,movies_poster
 

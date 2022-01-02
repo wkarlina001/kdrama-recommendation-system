@@ -30,9 +30,8 @@ def make_recommendation(title):
         
         image = os.listdir('image/korean-'+title)[0]
         movies_poster.append('image/korean-'+title+'/'+image)
-        ratings.append(movies[movies.index == element[0]]["Rating(Out of 10)"].values[0])
 
-    return similar_movies,movies_poster,ratings
+    return similar_movies,movies_poster
 
 movies = pickle.load(open('movie_list.pkl','rb'))
 similarity = pickle.load(open('similarity.pkl','rb'))
@@ -45,7 +44,7 @@ selected_movie = st.selectbox(
 )
 
 if st.button('Show Recommendation'):
-    recommended_movie_names,recommended_movie_posters,ratings = make_recommendation(selected_movie)
+    recommended_movie_names,recommended_movie_posters = make_recommendation(selected_movie)
     col1, col2 = st.columns(2)
     with col1:
         st.text(recommended_movie_names[0])
